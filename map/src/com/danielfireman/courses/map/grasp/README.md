@@ -9,5 +9,6 @@ This example can be used to show (or at least glance at):
 
 ## Running example
 ```sh
+$ cd ../../../../..
 $ javac -Xlint -cp . com/danielfireman/courses/map/grasp/*.java; java -cp . com.danielfireman.courses.map.grasp.Gateway
 ```
