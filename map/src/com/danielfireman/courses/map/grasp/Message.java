@@ -1,13 +1,13 @@
 package com.danielfireman.courses.map.grasp;
 
 /** Message data holder. */
-class Email implements Sendable {
+class Message implements Sendable {
     String subject;
     String content;
     String sender;
     Iterable<String> receivers;
 
-    Email(String subject, String content, String sender, Iterable<String> receivers) {
+    Message(String subject, String content, String sender, Iterable<String> receivers) {
         this.subject = subject;
         this.content = content;
         this.sender = sender;
