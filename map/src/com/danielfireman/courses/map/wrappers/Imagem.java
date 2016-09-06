@@ -7,12 +7,17 @@ import java.io.IOException;
  */
 interface Imagem {
     /**
-     * @return Tamanho da imagem em bytes.
+     * @return Altura da imagem em pixels.
      */
-    long tamanho();
+    short altura();
 
     /**
-     * Desenha a imagem no console, usando ASCII art.
+     * @return Largura da imagem em pixels.
      */
-    void drawAsciiArt() throws IOException;
+    short largura();
+
+    /**
+     * Desenha a imagem.
+     */
+    void draw() throws IOException;
 }

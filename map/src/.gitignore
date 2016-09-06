@@ -1,1 +1,4 @@
 *.class
+.idea/
+.idea/vcs.iml
+src.iml
