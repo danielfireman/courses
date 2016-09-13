@@ -20,4 +20,9 @@ interface Imagem {
      * Desenha a imagem.
      */
     void draw() throws IOException;
+
+    /**
+     * @return o tipo da imagem. Por exemplo, "gif".
+     */
+    String getTipo();
 }
