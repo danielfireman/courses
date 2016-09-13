@@ -2,6 +2,11 @@ package com.danielfireman.courses.map.wrappers;
 
 import java.io.IOException;
 
+/**
+ * Adaptador de imagens gif. Usa a biblioteca <code>ImprovedGif</code> para
+ * desenhar imagens Gif e o cabeçalho para responder informações sobre
+ * a altura e a largura.
+ */
 class AdapterGif implements Imagem {
     Cabecalho cabecalho;
     ImprovedGif ig;
