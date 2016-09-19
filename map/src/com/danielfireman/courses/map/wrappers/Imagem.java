@@ -25,4 +25,9 @@ interface Imagem {
      * @return o tipo da imagem. Por exemplo, "gif".
      */
     String getTipo();
+
+    /**
+     * @return o conteúdo do imagem, sem cabeçalho.
+     */
+    byte[][] content() throws IOException;
 }

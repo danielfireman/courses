@@ -12,10 +12,14 @@ public class FabricaDeImagens {
                 //        new Gif(path),
                 //        new Path(path),
                 //        new CabecalhoGif(path));
-                return new GifProxy(new Path(path), new CabecalhoGif(path));
-            };
-                //return new AdapterGif(new ImprovedGif(path), new Path(path), new CabecalhoGif(path));
+                //return new GifProxy(new Path(path), new CabecalhoGif(path));
+                return new ImagemComFiltro(
+                        new Gif(path),
+                        new Path(path),
+                        new CabecalhoGif(path));
+
         }
-        throw new RuntimeException("Booo");
+        ;
+        return new AdapterGif(new ImprovedGif(path), new Path(path), new CabecalhoGif(path));
     }
 }
